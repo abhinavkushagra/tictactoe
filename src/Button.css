@@ -1,0 +1,20 @@
+.button {
+    font-family: 'VTKSchalk';
+    color: #fff;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 125px;
+    height: 120px;
+    vertical-align: top;
+    margin: 6px 7px;
+    border: 0;
+}
+
+
+.pink {
+    color: rgb(240, 74, 255);
+}
+
+.sky {
+    color: rgb(99, 231, 231);
+}

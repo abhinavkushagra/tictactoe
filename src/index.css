@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(17, 66, 17);
+    
+}
+@font-face {
+    font-family: 'Crosshatcher';
+    src: url('fonts/CrosshatcherD.otf') format('opentype'); 
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'VTKSchalk';
+    src: url('fonts/vtkschalk 79.ttf') format('truetype');
+    font-style: normal;
+}

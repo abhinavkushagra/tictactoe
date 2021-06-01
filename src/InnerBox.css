@@ -1,0 +1,74 @@
+.innerbox{
+    position: relative;
+    font-family: 'VTKSchalk';
+    font-size: 80px;
+    top: 130px;
+    width: 420px;
+    height: 450px;
+    color: rgba(255, 251, 251, 0.884);
+    margin: 0px auto;
+}
+
+.innerbox div {
+    display: block;
+    width: fit-content;
+    block-size: fit-content
+}
+
+.lineClass {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.innerbox div.horizontal{
+    position: relative;
+    top: 80px;
+}
+
+.innerbox div.vertical{
+    position: relative;
+    width: fit-content;
+    left: -21px;
+    top: -10px;
+}
+
+
+.innerbox div.horizontal::before{
+    content: '________________';
+    display: block;
+    
+}
+.innerbox div.horizontal::after{
+    content: '________________';
+    display: block;
+    margin-top: 47px;
+}
+
+.innerbox div.vertical::before{
+    content: '_______________';
+    display: block;
+    transform: rotate(90deg);
+    margin-top: -34px;
+    margin-left: -55px;
+    
+}
+.innerbox div.vertical::after{
+    content: '_______________';
+    display: block;
+    transform: rotate(90deg);
+    margin-top: -90px;
+    margin-right: 333px;
+}
+
+.btnClass {
+    position: relative;
+    top: 27px;
+    left: -10px;
+}
+
+
+

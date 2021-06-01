@@ -1,0 +1,94 @@
+.boxed {
+    position:static;
+    background-color: #161010ce;
+    width: 750px;
+    height: 800px;
+    border: 35px solid #ada2a2c7;
+    margin: 80px auto;
+    box-shadow: 18px 18px 18px #18141467;
+}
+
+.contents {
+    font-family: 'VTKSchalk';
+    font-size: 80px;
+    height: 100%;
+    color: rgba(255, 251, 251, 0.884);
+    text-align: center;
+}
+
+.contents p{    
+    margin: 10px 0;
+}
+
+div.winner {
+    margin-top: 140px;
+    font-size: 70px;
+}
+
+div.winner>p{
+    width: 60%;
+    text-align: end;
+    display: inline-block;
+}
+
+div.winner button>img{
+    width: 40px;
+    height: 40px;
+}
+
+.pink {
+    color: rgb(240, 74, 255);
+}
+
+.sky {
+    color: rgb(99, 231, 231);
+}
+
+.button-3d {
+    position:relative;
+    width: auto;
+    display:inline-block;
+    color:#ecf0f1;
+    text-decoration:none;
+    border-radius:5px;
+    text-align:center;
+    padding:10px 17px 10px;
+    margin: 12px 0px 0px 100px;
+    vertical-align: top;
+    -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      transition: all 0.1s;
+  }
+  
+  .button-3d:active{
+    position:relative;
+    top:4px;
+  }
+
+  .pink-3d {
+    border:solid 1px #da7ef1;
+    background:#e947db;
+    -webkit-box-shadow: 0px 6px 0px #bb07ac;
+    -moz-box-shadow: 0px 6px 0px #bb07ac;
+    box-shadow: 0px 6px 0px #bb07ac;
+  }
+
+  .pink-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #bb07ac;
+    -moz-box-shadow: 0px 2px 0px #bb07ac;
+    box-shadow: 0px 2px 0px #bb07ac;
+  }
+
+  .sky-3d {
+    border:solid 1px #c1f0ff;
+    background:#47eefa;
+    -webkit-box-shadow: 0px 6px 0px #03acc2;
+    -moz-box-shadow: 0px 6px 0px #03acc2;
+    box-shadow: 0px 6px 0px #03acc2;
+  }
+
+  .sky-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #03acc2;
+    -moz-box-shadow: 0px 2px 0px #03acc2;
+    box-shadow: 0px 2px 0px #03acc2;
+  }
