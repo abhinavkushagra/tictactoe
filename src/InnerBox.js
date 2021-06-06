@@ -1,13 +1,16 @@
 import './InnerBox.css'
 import Button from './Button'
 import { useEffect, useState} from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { setWinner } from './store/action'
 
-const InnerBox = ({setWinner}) => {
+const InnerBox = () => {
     const [current, setCurrent] = useState();
     const [counter, setCounter] = useState(0);
     const [location, setLocation] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
-    const [isCross, setCross] = useState(false)
     
+    const {winner} = useSelector(state => state);
+    const dispatch = useDispatch();
 
     const check = {
         0: [[1, 2], [3, 6], [4, 8]],
@@ -26,12 +29,11 @@ const InnerBox = ({setWinner}) => {
         if(counter > 3){
             for (let i = 0; i < check[current - 1].length ; i++){
                 if(location[current - 1] === location[check[current - 1][i][0]]  && location[current - 1] === location[check[current - 1][i][1]]){
-                    setCross(true)
-                    location[current - 1] === 1 ? setWinner('X') : setWinner('O')
+                    location[current - 1] === 1 ? dispatch(setWinner('X')) : dispatch(setWinner('O'))
                 }
             }
         }
-    }, [location, counter])
+    }, [location, counter, winner])
     
     
     const clickHandler = (e, id, setValue) => {
@@ -52,9 +54,9 @@ const InnerBox = ({setWinner}) => {
     const buttons = []
 
     for(let i = 1; i <= 9; i++){
-        buttons.push(<Button key={i} id={i} onclick={clickHandler} isCross={isCross}/>)
+        console.log(winner, !(winner === ''))
+        buttons.push(<Button key={i} id={i} onclick={clickHandler} isCross={!(winner === '')}/>)
     }
-    
     
     return( 
         <div className="innerbox"> 
